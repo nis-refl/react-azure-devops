@@ -1,6 +1,34 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Notes
+
+Deploying React app to Azure with Azure DevOps
+
+todo:
+- how to create app on linux on azure?
+- delete app service and create code to add app service 
+- delete devops and see if it can detect yaml 
+- check devops prices 
+- can i save yaml for azure releases?
+- can i import yaml for azure builds?
+
+npx create-react-app react-azure-devops
+cd react-azure-devops
+npm start
+*create azure organisation e.g. dev.azure.com/tetefufu
+*create project in azure devops organisation
+create pipeline 
+- source: github repo
+* add build yaml
+create app service 
+	* change to code :
+	+ app service plan 
+	+ app service web app 
+create Release
+	+ Stage: Production
+	+ Artifact: depoy pipeline
+		- pick azure subscription (auth)
+		- pick azure web app 
 
 ## Available Scripts
 
